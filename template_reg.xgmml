@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <graph directed="1"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.cs.rpi.edu/XGMML">
+    <att name="selected" value="1" type="boolean" />
+    <att name="name" value="template_reg.xgmml" type="string"/>
+    <att name="shared name" value="template_reg.xgmml" type="string"/>
+    
+<node id="PSII_[(Chlorophyll)]_e+_o2_[(o)]" label="PSII_[(Chlorophyll)]_e+_o2_[(o)]"><att name="rxnconID" value="PSII_[(Chlorophyll)]_e+_o2_[(o)]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="betaCarotene_[(cchain)]-{oxidize}" label="betaCarotene_[(cchain)]-{oxidize}"><att name="rxnconID" value="betaCarotene_[(cchain)]-{oxidize}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="PSII_trip_PSII_[(Chlorophyll)]" label="PSII_trip_PSII_[(Chlorophyll)]"><att name="rxnconID" value="PSII_trip_PSII_[(Chlorophyll)]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="o2_[(o)]-{reduced}" label="o2_[(o)]-{reduced}"><att name="rxnconID" value="o2_[(o)]-{reduced}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="PSII_[(Chlorophyll)]-{triplet}" label="PSII_[(Chlorophyll)]-{triplet}"><att name="rxnconID" value="PSII_[(Chlorophyll)]-{triplet}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="[High_Light]" label="[High_Light]"><att name="rxnconID" value="[High_Light]" type="string"/><att name="type" value="input" type="string"/></node>
+<node id="o2_[(o)]_oxi_betaCarotene_[(cchain)]" label="o2_[(o)]_oxi_betaCarotene_[(cchain)]"><att name="rxnconID" value="o2_[(o)]_oxi_betaCarotene_[(cchain)]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="betaCarotene_[(loc)]-{chloroplast}" label="betaCarotene_[(loc)]-{chloroplast}"><att name="rxnconID" value="betaCarotene_[(loc)]-{chloroplast}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="betaCarotene_cexp_betaCarotene" label="betaCarotene_cexp_betaCarotene"><att name="rxnconID" value="betaCarotene_cexp_betaCarotene" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="betaCarotene_cimp_betaCarotene" label="betaCarotene_cimp_betaCarotene"><att name="rxnconID" value="betaCarotene_cimp_betaCarotene" type="string"/><att name="type" value="reaction" type="string"/></node>
+<edge source="PSII_[(Chlorophyll)]_e+_o2_[(o)]" target="o2_[(o)]-{reduced}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="PSII_[(Chlorophyll)]_e+_o2_[(o)]" target="PSII_[(Chlorophyll)]-{triplet}"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="betaCarotene_[(cchain)]-{oxidize}" target="betaCarotene_cexp_betaCarotene"><att name="interaction" value="!" type="string"/></edge>
+<edge source="PSII_trip_PSII_[(Chlorophyll)]" target="PSII_[(Chlorophyll)]-{triplet}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="o2_[(o)]-{reduced}" target="o2_[(o)]_oxi_betaCarotene_[(cchain)]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="PSII_[(Chlorophyll)]-{triplet}" target="PSII_[(Chlorophyll)]_e+_o2_[(o)]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="[High_Light]" target="PSII_trip_PSII_[(Chlorophyll)]"><att name="interaction" value="!" type="string"/></edge>
+<edge source="o2_[(o)]_oxi_betaCarotene_[(cchain)]" target="betaCarotene_[(cchain)]-{oxidize}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="o2_[(o)]_oxi_betaCarotene_[(cchain)]" target="o2_[(o)]-{reduced}"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="betaCarotene_[(loc)]-{chloroplast}" target="o2_[(o)]_oxi_betaCarotene_[(cchain)]"><att name="interaction" value="!" type="string"/></edge>
+<edge source="betaCarotene_[(loc)]-{chloroplast}" target="betaCarotene_cexp_betaCarotene"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="betaCarotene_cexp_betaCarotene" target="betaCarotene_[(loc)]-{chloroplast}"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="betaCarotene_cimp_betaCarotene" target="betaCarotene_[(loc)]-{chloroplast}"><att name="interaction" value="produce" type="string"/></edge>
+</graph>

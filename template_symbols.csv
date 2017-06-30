@@ -1,0 +1,14 @@
+R0, PSII_[(Chlorophyll)]_e+_o2_[(o)]
+R1, PSII_trip_PSII_[(Chlorophyll)]
+R2, betaCarotene_cexp_betaCarotene
+R3, betaCarotene_cimp_betaCarotene
+R4, o2_[(o)]_oxi_betaCarotene_[(cchain)]
+S0, PSII_[(Chlorophyll)]-{0}
+S1, PSII_[(Chlorophyll)]-{triplet}
+S2, [High_Light]
+S3, betaCarotene_[(cchain)]-{0}
+S4, betaCarotene_[(cchain)]-{oxidize}
+S5, betaCarotene_[(loc)]-{0}
+S6, betaCarotene_[(loc)]-{chloroplast}
+S7, o2_[(o)]-{0}
+S8, o2_[(o)]-{reduced}
