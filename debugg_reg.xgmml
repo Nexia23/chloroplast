@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    <graph directed="1"  xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.cs.rpi.edu/XGMML">
+    <att name="selected" value="1" type="boolean" />
+    <att name="name" value="debugg_reg.xgmml" type="string"/>
+    <att name="shared name" value="debugg_reg.xgmml" type="string"/>
+    
+<node id="boolABI4" label="boolABI4"><att name="rxnconID" value="boolABI4" type="string"/><att name="type" value="boolean_and" type="string"/></node>
+<node id="boolPTMBi" label="boolPTMBi"><att name="rxnconID" value="boolPTMBi" type="string"/><att name="type" value="boolean_and" type="string"/></node>
+<node id="RNAPol_trsc_LHCbGene" label="RNAPol_trsc_LHCbGene"><att name="rxnconID" value="RNAPol_trsc_LHCbGene" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="RNAPol_trsc_ABI4Gene" label="RNAPol_trsc_ABI4Gene"><att name="rxnconID" value="RNAPol_trsc_ABI4Gene" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="ABI4_[TF]--LHCbGene_[Gbox]" label="ABI4_[TF]--LHCbGene_[Gbox]"><att name="rxnconID" value="ABI4_[TF]--LHCbGene_[Gbox]" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="Protein1_CUT_PTM_[(Cterminus)]" label="Protein1_CUT_PTM_[(Cterminus)]"><att name="rxnconID" value="Protein1_CUT_PTM_[(Cterminus)]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="ABI4" label="ABI4"><att name="rxnconID" value="ABI4" type="string"/><att name="type" value="component" type="string"/></node>
+<node id="Ribosome_trsl_ABI4mRNA" label="Ribosome_trsl_ABI4mRNA"><att name="rxnconID" value="Ribosome_trsl_ABI4mRNA" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="PTM_[PHD]_bind-_ABI4Gene_[Promotor]" label="PTM_[PHD]_bind-_ABI4Gene_[Promotor]"><att name="rxnconID" value="PTM_[PHD]_bind-_ABI4Gene_[Promotor]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="LHCb" label="LHCb"><att name="rxnconID" value="LHCb" type="string"/><att name="type" value="component" type="string"/></node>
+<node id="ABI4_[TF]_bind-_LHCbGene_[Gbox]" label="ABI4_[TF]_bind-_LHCbGene_[Gbox]"><att name="rxnconID" value="ABI4_[TF]_bind-_LHCbGene_[Gbox]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="PTM_[PHD]_bind+_ABI4Gene_[Promotor]" label="PTM_[PHD]_bind+_ABI4Gene_[Promotor]"><att name="rxnconID" value="PTM_[PHD]_bind+_ABI4Gene_[Promotor]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="ABI4Gene_[Promotor]--PTM_[PHD]" label="ABI4Gene_[Promotor]--PTM_[PHD]"><att name="rxnconID" value="ABI4Gene_[Promotor]--PTM_[PHD]" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="Ribosome_trsl_LHCbmRNA" label="Ribosome_trsl_LHCbmRNA"><att name="rxnconID" value="Ribosome_trsl_LHCbmRNA" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="PTM_[(loc)]-{nucleus}" label="PTM_[(loc)]-{nucleus}"><att name="rxnconID" value="PTM_[(loc)]-{nucleus}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="PTM_[(Cterminus)]-{truncated}" label="PTM_[(Cterminus)]-{truncated}"><att name="rxnconID" value="PTM_[(Cterminus)]-{truncated}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="ABI4mRNA" label="ABI4mRNA"><att name="rxnconID" value="ABI4mRNA" type="string"/><att name="type" value="component" type="string"/></node>
+<node id="LHCbmRNA" label="LHCbmRNA"><att name="rxnconID" value="LHCbmRNA" type="string"/><att name="type" value="component" type="string"/></node>
+<node id="PTM_nimp_PTM" label="PTM_nimp_PTM"><att name="rxnconID" value="PTM_nimp_PTM" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="ABI4_[TF]_bind+_LHCbGene_[Gbox]" label="ABI4_[TF]_bind+_LHCbGene_[Gbox]"><att name="rxnconID" value="ABI4_[TF]_bind+_LHCbGene_[Gbox]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<edge source="boolABI4" target="RNAPol_trsc_ABI4Gene"><att name="interaction" value="!" type="string"/></edge>
+<edge source="boolPTMBi" target="PTM_[PHD]_bind+_ABI4Gene_[Promotor]"><att name="interaction" value="!" type="string"/></edge>
+<edge source="RNAPol_trsc_LHCbGene" target="LHCbmRNA"><att name="interaction" value="synthesis" type="string"/></edge>
+<edge source="RNAPol_trsc_ABI4Gene" target="ABI4mRNA"><att name="interaction" value="synthesis" type="string"/></edge>
+<edge source="ABI4_[TF]--LHCbGene_[Gbox]" target="RNAPol_trsc_LHCbGene"><att name="interaction" value="k-" type="string"/></edge>
+<edge source="ABI4_[TF]--LHCbGene_[Gbox]" target="ABI4_[TF]_bind-_LHCbGene_[Gbox]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="Protein1_CUT_PTM_[(Cterminus)]" target="PTM_[(Cterminus)]-{truncated}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="ABI4" target="ABI4_[TF]_bind+_LHCbGene_[Gbox]"><att name="interaction" value="is" type="string"/></edge>
+<edge source="Ribosome_trsl_ABI4mRNA" target="ABI4"><att name="interaction" value="synthesis" type="string"/></edge>
+<edge source="PTM_[PHD]_bind-_ABI4Gene_[Promotor]" target="ABI4Gene_[Promotor]--PTM_[PHD]"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="ABI4_[TF]_bind-_LHCbGene_[Gbox]" target="ABI4_[TF]--LHCbGene_[Gbox]"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="PTM_[PHD]_bind+_ABI4Gene_[Promotor]" target="ABI4Gene_[Promotor]--PTM_[PHD]"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="ABI4Gene_[Promotor]--PTM_[PHD]" target="boolABI4"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="ABI4Gene_[Promotor]--PTM_[PHD]" target="PTM_[PHD]_bind-_ABI4Gene_[Promotor]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="Ribosome_trsl_LHCbmRNA" target="LHCb"><att name="interaction" value="synthesis" type="string"/></edge>
+<edge source="PTM_[(loc)]-{nucleus}" target="boolABI4"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="PTM_[(loc)]-{nucleus}" target="boolPTMBi"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="PTM_[(Cterminus)]-{truncated}" target="boolABI4"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="PTM_[(Cterminus)]-{truncated}" target="boolPTMBi"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="PTM_[(Cterminus)]-{truncated}" target="PTM_nimp_PTM"><att name="interaction" value="!" type="string"/></edge>
+<edge source="ABI4mRNA" target="Ribosome_trsl_ABI4mRNA"><att name="interaction" value="modifiy" type="string"/></edge>
+<edge source="LHCbmRNA" target="Ribosome_trsl_LHCbmRNA"><att name="interaction" value="modifiy" type="string"/></edge>
+<edge source="PTM_nimp_PTM" target="PTM_[(loc)]-{nucleus}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="ABI4_[TF]_bind+_LHCbGene_[Gbox]" target="ABI4_[TF]--LHCbGene_[Gbox]"><att name="interaction" value="produce" type="string"/></edge>
+</graph>
