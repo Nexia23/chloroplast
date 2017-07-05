@@ -4,27 +4,110 @@
     <att name="name" value="template_reg.xgmml" type="string"/>
     <att name="shared name" value="template_reg.xgmml" type="string"/>
     
-<node id="PSII_[(Chlorophyll)]_e+_o2_[(o)]" label="PSII_[(Chlorophyll)]_e+_o2_[(o)]"><att name="rxnconID" value="PSII_[(Chlorophyll)]_e+_o2_[(o)]" type="string"/><att name="type" value="reaction" type="string"/></node>
-<node id="betaCarotene_[(cchain)]-{oxidize}" label="betaCarotene_[(cchain)]-{oxidize}"><att name="rxnconID" value="betaCarotene_[(cchain)]-{oxidize}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="SA_deoligo_NPR1_[(dimer)]" label="SA_deoligo_NPR1_[(dimer)]"><att name="rxnconID" value="SA_deoligo_NPR1_[(dimer)]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="boolbetaint" label="boolbetaint"><att name="rxnconID" value="boolbetaint" type="string"/><att name="type" value="boolean_and" type="string"/></node>
+<node id="PSII_[(Chlorophyll)]_engt_o2_[(o)]" label="PSII_[(Chlorophyll)]_engt_o2_[(o)]"><att name="rxnconID" value="PSII_[(Chlorophyll)]_engt_o2_[(o)]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="Ribosome_trsl_GTSmRNA" label="Ribosome_trsl_GTSmRNA"><att name="rxnconID" value="Ribosome_trsl_GTSmRNA" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="NPR1_[(loc)]-{nucleus}" label="NPR1_[(loc)]-{nucleus}"><att name="rxnconID" value="NPR1_[(loc)]-{nucleus}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="EDS1_nimp_EDS1" label="EDS1_nimp_EDS1"><att name="rxnconID" value="EDS1_nimp_EDS1" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="RNAPol_trsc_GTSGene" label="RNAPol_trsc_GTSGene"><att name="rxnconID" value="RNAPol_trsc_GTSGene" type="string"/><att name="type" value="reaction" type="string"/></node>
 <node id="PSII_trip_PSII_[(Chlorophyll)]" label="PSII_trip_PSII_[(Chlorophyll)]"><att name="rxnconID" value="PSII_trip_PSII_[(Chlorophyll)]" type="string"/><att name="type" value="reaction" type="string"/></node>
-<node id="o2_[(o)]-{reduced}" label="o2_[(o)]-{reduced}"><att name="rxnconID" value="o2_[(o)]-{reduced}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="EDS1_[A]--betaCarotene_[all]" label="EDS1_[A]--betaCarotene_[all]"><att name="rxnconID" value="EDS1_[A]--betaCarotene_[all]" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="ICS1" label="ICS1"><att name="rxnconID" value="ICS1" type="string"/><att name="type" value="component" type="string"/></node>
 <node id="PSII_[(Chlorophyll)]-{triplet}" label="PSII_[(Chlorophyll)]-{triplet}"><att name="rxnconID" value="PSII_[(Chlorophyll)]-{triplet}" type="string"/><att name="type" value="state" type="string"/></node>
-<node id="[High_Light]" label="[High_Light]"><att name="rxnconID" value="[High_Light]" type="string"/><att name="type" value="input" type="string"/></node>
-<node id="o2_[(o)]_oxi_betaCarotene_[(cchain)]" label="o2_[(o)]_oxi_betaCarotene_[(cchain)]"><att name="rxnconID" value="o2_[(o)]_oxi_betaCarotene_[(cchain)]" type="string"/><att name="type" value="reaction" type="string"/></node>
-<node id="betaCarotene_[(loc)]-{chloroplast}" label="betaCarotene_[(loc)]-{chloroplast}"><att name="rxnconID" value="betaCarotene_[(loc)]-{chloroplast}" type="string"/><att name="type" value="state" type="string"/></node>
-<node id="betaCarotene_cexp_betaCarotene" label="betaCarotene_cexp_betaCarotene"><att name="rxnconID" value="betaCarotene_cexp_betaCarotene" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="NPR1_[(dimer)]-{monomer}" label="NPR1_[(dimer)]-{monomer}"><att name="rxnconID" value="NPR1_[(dimer)]-{monomer}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="betaCarotene_[all]_i-_EDS1_[A]" label="betaCarotene_[all]_i-_EDS1_[A]"><att name="rxnconID" value="betaCarotene_[all]_i-_EDS1_[A]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="GTSGene_[Promotor]--TGA_[TF]" label="GTSGene_[Promotor]--TGA_[TF]"><att name="rxnconID" value="GTSGene_[Promotor]--TGA_[TF]" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="o2_[(o)]-{singulet}" label="o2_[(o)]-{singulet}"><att name="rxnconID" value="o2_[(o)]-{singulet}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="boolGTStrsc" label="boolGTStrsc"><att name="rxnconID" value="boolGTStrsc" type="string"/><att name="type" value="boolean_and" type="string"/></node>
 <node id="betaCarotene_cimp_betaCarotene" label="betaCarotene_cimp_betaCarotene"><att name="rxnconID" value="betaCarotene_cimp_betaCarotene" type="string"/><att name="type" value="reaction" type="string"/></node>
-<edge source="PSII_[(Chlorophyll)]_e+_o2_[(o)]" target="o2_[(o)]-{reduced}"><att name="interaction" value="produce" type="string"/></edge>
-<edge source="PSII_[(Chlorophyll)]_e+_o2_[(o)]" target="PSII_[(Chlorophyll)]-{triplet}"><att name="interaction" value="consume" type="string"/></edge>
-<edge source="betaCarotene_[(cchain)]-{oxidize}" target="betaCarotene_cexp_betaCarotene"><att name="interaction" value="!" type="string"/></edge>
+<node id="betaCarotene@0-{0}" label="betaCarotene@0-{0}"><att name="rxnconID" value="betaCarotene@0-{0}" type="string"/><att name="type" value="boolean_or" type="string"/></node>
+<node id="GTSmRNA" label="GTSmRNA"><att name="rxnconID" value="GTSmRNA" type="string"/><att name="type" value="component" type="string"/></node>
+<node id="[GTS]" label="[GTS]"><att name="rxnconID" value="[GTS]" type="string"/><att name="type" value="input" type="string"/></node>
+<node id="boolGTSb" label="boolGTSb"><att name="rxnconID" value="boolGTSb" type="string"/><att name="type" value="boolean_and" type="string"/></node>
+<node id="boolNPR1int" label="boolNPR1int"><att name="rxnconID" value="boolNPR1int" type="string"/><att name="type" value="boolean_and" type="string"/></node>
+<node id="ICS1_syn_SA" label="ICS1_syn_SA"><att name="rxnconID" value="ICS1_syn_SA" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="TGA_[TF]_bind-_GTSGene_[Promotor]" label="TGA_[TF]_bind-_GTSGene_[Promotor]"><att name="rxnconID" value="TGA_[TF]_bind-_GTSGene_[Promotor]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="betaCarotene_[(cchain)]-{0}" label="betaCarotene_[(cchain)]-{0}"><att name="rxnconID" value="betaCarotene_[(cchain)]-{0}" type="string"/><att name="type" value="boolean_not" type="string"/></node>
+<node id="NPR1_[all]_i-_TGA_[classII]" label="NPR1_[all]_i-_TGA_[classII]"><att name="rxnconID" value="NPR1_[all]_i-_TGA_[classII]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="NPR1_[all]--TGA_[classII]" label="NPR1_[all]--TGA_[classII]"><att name="rxnconID" value="NPR1_[all]--TGA_[classII]" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="ICS1mRNA" label="ICS1mRNA"><att name="rxnconID" value="ICS1mRNA" type="string"/><att name="type" value="component" type="string"/></node>
+<node id="betaCarotene_[all]_i+_EDS1_[A]" label="betaCarotene_[all]_i+_EDS1_[A]"><att name="rxnconID" value="betaCarotene_[all]_i+_EDS1_[A]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="betaCarotene_[(loc)]-{chloroplast}" label="betaCarotene_[(loc)]-{chloroplast}"><att name="rxnconID" value="betaCarotene_[(loc)]-{chloroplast}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="NPR1_nimp_NPR1" label="NPR1_nimp_NPR1"><att name="rxnconID" value="NPR1_nimp_NPR1" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="TGA_[TF]_bind+_GTSGene_[Promotor]" label="TGA_[TF]_bind+_GTSGene_[Promotor]"><att name="rxnconID" value="TGA_[TF]_bind+_GTSGene_[Promotor]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="EDS1_[sub]--ICS1Gene_[Promotor]" label="EDS1_[sub]--ICS1Gene_[Promotor]"><att name="rxnconID" value="EDS1_[sub]--ICS1Gene_[Promotor]" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="[High_Light]" label="[High_Light]"><att name="rxnconID" value="[High_Light]" type="string"/><att name="type" value="output" type="string"/></node>
+<node id="RNAPol_trsc_ICS1Gene" label="RNAPol_trsc_ICS1Gene"><att name="rxnconID" value="RNAPol_trsc_ICS1Gene" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="EDS1_[(loc)]-{nucleus}" label="EDS1_[(loc)]-{nucleus}"><att name="rxnconID" value="EDS1_[(loc)]-{nucleus}" type="string"/><att name="type" value="state" type="string"/></node>
+<node id="NPR1_[all]_i+_TGA_[classII]" label="NPR1_[all]_i+_TGA_[classII]"><att name="rxnconID" value="NPR1_[all]_i+_TGA_[classII]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="o2_[(o)]_oxi_betaCarotene_[(cchain)]" label="o2_[(o)]_oxi_betaCarotene_[(cchain)]"><att name="rxnconID" value="o2_[(o)]_oxi_betaCarotene_[(cchain)]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="EDS1_[sub]_i-_ICS1Gene_[Promotor]" label="EDS1_[sub]_i-_ICS1Gene_[Promotor]"><att name="rxnconID" value="EDS1_[sub]_i-_ICS1Gene_[Promotor]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="Ribosome_trsl_ICS1mRNA" label="Ribosome_trsl_ICS1mRNA"><att name="rxnconID" value="Ribosome_trsl_ICS1mRNA" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="GTS" label="GTS"><att name="rxnconID" value="GTS" type="string"/><att name="type" value="component" type="string"/></node>
+<node id="SA" label="SA"><att name="rxnconID" value="SA" type="string"/><att name="type" value="component" type="string"/></node>
+<node id="betaCarotene_cexp_betaCarotene" label="betaCarotene_cexp_betaCarotene"><att name="rxnconID" value="betaCarotene_cexp_betaCarotene" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="betaCarotene_[(loc)]-{0}" label="betaCarotene_[(loc)]-{0}"><att name="rxnconID" value="betaCarotene_[(loc)]-{0}" type="string"/><att name="type" value="boolean_not" type="string"/></node>
+<node id="EDS1_[sub]_i+_ICS1Gene_[Promotor]" label="EDS1_[sub]_i+_ICS1Gene_[Promotor]"><att name="rxnconID" value="EDS1_[sub]_i+_ICS1Gene_[Promotor]" type="string"/><att name="type" value="reaction" type="string"/></node>
+<node id="betaCarotene_[(cchain)]-{oxidize}" label="betaCarotene_[(cchain)]-{oxidize}"><att name="rxnconID" value="betaCarotene_[(cchain)]-{oxidize}" type="string"/><att name="type" value="state" type="string"/></node>
+<edge source="SA_deoligo_NPR1_[(dimer)]" target="NPR1_[(dimer)]-{monomer}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="boolbetaint" target="betaCarotene_[all]_i+_EDS1_[A]"><att name="interaction" value="!" type="string"/></edge>
+<edge source="boolbetaint" target="EDS1_[sub]_i+_ICS1Gene_[Promotor]"><att name="interaction" value="!" type="string"/></edge>
+<edge source="PSII_[(Chlorophyll)]_engt_o2_[(o)]" target="o2_[(o)]-{singulet}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="PSII_[(Chlorophyll)]_engt_o2_[(o)]" target="PSII_[(Chlorophyll)]-{triplet}"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="Ribosome_trsl_GTSmRNA" target="GTS"><att name="interaction" value="synthesis" type="string"/></edge>
+<edge source="NPR1_[(loc)]-{nucleus}" target="boolNPR1int"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="EDS1_nimp_EDS1" target="EDS1_[(loc)]-{nucleus}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="RNAPol_trsc_GTSGene" target="GTSmRNA"><att name="interaction" value="synthesis" type="string"/></edge>
 <edge source="PSII_trip_PSII_[(Chlorophyll)]" target="PSII_[(Chlorophyll)]-{triplet}"><att name="interaction" value="produce" type="string"/></edge>
-<edge source="o2_[(o)]-{reduced}" target="o2_[(o)]_oxi_betaCarotene_[(cchain)]"><att name="interaction" value="ss" type="string"/></edge>
-<edge source="PSII_[(Chlorophyll)]-{triplet}" target="PSII_[(Chlorophyll)]_e+_o2_[(o)]"><att name="interaction" value="ss" type="string"/></edge>
-<edge source="[High_Light]" target="PSII_trip_PSII_[(Chlorophyll)]"><att name="interaction" value="!" type="string"/></edge>
-<edge source="o2_[(o)]_oxi_betaCarotene_[(cchain)]" target="betaCarotene_[(cchain)]-{oxidize}"><att name="interaction" value="produce" type="string"/></edge>
-<edge source="o2_[(o)]_oxi_betaCarotene_[(cchain)]" target="o2_[(o)]-{reduced}"><att name="interaction" value="consume" type="string"/></edge>
-<edge source="betaCarotene_[(loc)]-{chloroplast}" target="o2_[(o)]_oxi_betaCarotene_[(cchain)]"><att name="interaction" value="!" type="string"/></edge>
-<edge source="betaCarotene_[(loc)]-{chloroplast}" target="betaCarotene_cexp_betaCarotene"><att name="interaction" value="ss" type="string"/></edge>
-<edge source="betaCarotene_cexp_betaCarotene" target="betaCarotene_[(loc)]-{chloroplast}"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="EDS1_[A]--betaCarotene_[all]" target="EDS1_nimp_EDS1"><att name="interaction" value="!" type="string"/></edge>
+<edge source="EDS1_[A]--betaCarotene_[all]" target="boolbetaint"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="EDS1_[A]--betaCarotene_[all]" target="betaCarotene_[all]_i-_EDS1_[A]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="ICS1" target="ICS1_syn_SA"><att name="interaction" value="modifiy" type="string"/></edge>
+<edge source="PSII_[(Chlorophyll)]-{triplet}" target="PSII_[(Chlorophyll)]_engt_o2_[(o)]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="NPR1_[(dimer)]-{monomer}" target="boolNPR1int"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="NPR1_[(dimer)]-{monomer}" target="NPR1_nimp_NPR1"><att name="interaction" value="!" type="string"/></edge>
+<edge source="betaCarotene_[all]_i-_EDS1_[A]" target="EDS1_[A]--betaCarotene_[all]"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="GTSGene_[Promotor]--TGA_[TF]" target="boolGTStrsc"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="GTSGene_[Promotor]--TGA_[TF]" target="TGA_[TF]_bind-_GTSGene_[Promotor]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="o2_[(o)]-{singulet}" target="o2_[(o)]_oxi_betaCarotene_[(cchain)]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="boolGTStrsc" target="RNAPol_trsc_GTSGene"><att name="interaction" value="!" type="string"/></edge>
 <edge source="betaCarotene_cimp_betaCarotene" target="betaCarotene_[(loc)]-{chloroplast}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="betaCarotene@0-{0}" target="boolbetaint"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="GTSmRNA" target="Ribosome_trsl_GTSmRNA"><att name="interaction" value="modifiy" type="string"/></edge>
+<edge source="[GTS]" target="[High_Light]"><att name="interaction" value="x" type="string"/></edge>
+<edge source="boolGTSb" target="boolGTStrsc"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="boolGTSb" target="TGA_[TF]_bind+_GTSGene_[Promotor]"><att name="interaction" value="!" type="string"/></edge>
+<edge source="boolNPR1int" target="boolGTSb"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="boolNPR1int" target="NPR1_[all]_i+_TGA_[classII]"><att name="interaction" value="!" type="string"/></edge>
+<edge source="ICS1_syn_SA" target="SA"><att name="interaction" value="synthesis" type="string"/></edge>
+<edge source="TGA_[TF]_bind-_GTSGene_[Promotor]" target="GTSGene_[Promotor]--TGA_[TF]"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="betaCarotene_[(cchain)]-{0}" target="betaCarotene@0-{0}"><att name="interaction" value="OR" type="string"/></edge>
+<edge source="NPR1_[all]_i-_TGA_[classII]" target="NPR1_[all]--TGA_[classII]"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="NPR1_[all]--TGA_[classII]" target="boolGTSb"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="NPR1_[all]--TGA_[classII]" target="NPR1_[all]_i-_TGA_[classII]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="ICS1mRNA" target="Ribosome_trsl_ICS1mRNA"><att name="interaction" value="modifiy" type="string"/></edge>
+<edge source="betaCarotene_[all]_i+_EDS1_[A]" target="EDS1_[A]--betaCarotene_[all]"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="betaCarotene_[(loc)]-{chloroplast}" target="betaCarotene_cexp_betaCarotene"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="betaCarotene_[(loc)]-{chloroplast}" target="o2_[(o)]_oxi_betaCarotene_[(cchain)]"><att name="interaction" value="!" type="string"/></edge>
+<edge source="betaCarotene_[(loc)]-{chloroplast}" target="betaCarotene_[(loc)]-{0}"><att name="interaction" value="NOT" type="string"/></edge>
+<edge source="NPR1_nimp_NPR1" target="NPR1_[(loc)]-{nucleus}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="TGA_[TF]_bind+_GTSGene_[Promotor]" target="GTSGene_[Promotor]--TGA_[TF]"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="EDS1_[sub]--ICS1Gene_[Promotor]" target="EDS1_[sub]_i-_ICS1Gene_[Promotor]"><att name="interaction" value="ss" type="string"/></edge>
+<edge source="EDS1_[sub]--ICS1Gene_[Promotor]" target="RNAPol_trsc_ICS1Gene"><att name="interaction" value="k+" type="string"/></edge>
+<edge source="[High_Light]" target="PSII_trip_PSII_[(Chlorophyll)]"><att name="interaction" value="!" type="string"/></edge>
+<edge source="RNAPol_trsc_ICS1Gene" target="ICS1mRNA"><att name="interaction" value="synthesis" type="string"/></edge>
+<edge source="EDS1_[(loc)]-{nucleus}" target="boolbetaint"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="NPR1_[all]_i+_TGA_[classII]" target="NPR1_[all]--TGA_[classII]"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="o2_[(o)]_oxi_betaCarotene_[(cchain)]" target="o2_[(o)]-{singulet}"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="o2_[(o)]_oxi_betaCarotene_[(cchain)]" target="betaCarotene_[(cchain)]-{oxidize}"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="EDS1_[sub]_i-_ICS1Gene_[Promotor]" target="EDS1_[sub]--ICS1Gene_[Promotor]"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="Ribosome_trsl_ICS1mRNA" target="ICS1"><att name="interaction" value="synthesis" type="string"/></edge>
+<edge source="SA" target="SA_deoligo_NPR1_[(dimer)]"><att name="interaction" value="modifiy" type="string"/></edge>
+<edge source="betaCarotene_cexp_betaCarotene" target="betaCarotene_[(loc)]-{chloroplast}"><att name="interaction" value="consume" type="string"/></edge>
+<edge source="betaCarotene_[(loc)]-{0}" target="betaCarotene@0-{0}"><att name="interaction" value="OR" type="string"/></edge>
+<edge source="EDS1_[sub]_i+_ICS1Gene_[Promotor]" target="EDS1_[sub]--ICS1Gene_[Promotor]"><att name="interaction" value="produce" type="string"/></edge>
+<edge source="betaCarotene_[(cchain)]-{oxidize}" target="betaCarotene_[(cchain)]-{0}"><att name="interaction" value="NOT" type="string"/></edge>
+<edge source="betaCarotene_[(cchain)]-{oxidize}" target="boolbetaint"><att name="interaction" value="AND" type="string"/></edge>
+<edge source="betaCarotene_[(cchain)]-{oxidize}" target="betaCarotene_cexp_betaCarotene"><att name="interaction" value="!" type="string"/></edge>
 </graph>
